@@ -1,0 +1,170 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Design Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to right, navy, darkyellow);
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #003366;
+        }
+        header h1 {
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 auto;
+            width: fit-content;
+        }
+        nav {
+            text-align: left;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+            padding-left: 25px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #b0c4de;
+        }
+        /* Submenu icons */
+        nav ul li:nth-child(1)::before { /* Contact */
+            content: '📞';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        nav ul li:nth-child(2)::before { /* Meet the Team */
+            content: '👥';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        nav ul li:nth-child(3)::before { /* About Us */
+            content: 'ℹ️';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        section h2 {
+            color: #003366;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+        }
+        footer {
+            margin-top: 40px;
+            width: 100%;
+            padding: 20px 0;
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+        /* New styles for featured work */
+        .featured-work {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .featured-work img {
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .featured-work-text {
+            width: 55%;
+        }
+        .featured-work-text h3 {
+            color: #003366;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .featured-work-text p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Molecular Design Group</h1>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-work">
+            <img src="https://via.placeholder.com/400x300" alt="Featured Research">
+            <div class="featured-work-text">
+                <h3>Featured Research: Novel Catalysts for Sustainable Chemistry</h3>
+                <p>Our group has developed a new class of catalysts that significantly improves the efficiency and sustainability of key chemical transformations. This breakthrough research, published in [Journal Name], demonstrates the power of combining computational design with rigorous experimental validation. We are exploring applications of these catalysts in the synthesis of pharmaceuticals and advanced materials.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Molecular Design Group</p>
+    </footer>
+</body>
+</html>
